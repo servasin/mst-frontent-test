@@ -1,0 +1,71 @@
+@import "../../styles/utils.scss";
+
+.header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  padding: 23px 0 0;
+}
+
+.logoIcon {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  height: 70px;
+  width: 70px;
+}
+
+.logoText {
+  margin: 0;
+  margin-left: 120px;
+}
+
+.logoText,
+.tel {
+  font-family: 'Gilroy-ExtraBold', sans-serif;
+  font-weight: 800;
+  font-size: 17px;
+  line-height: 21px;
+  letter-spacing: 0.290629px;
+  text-transform: uppercase;
+  color: $color-dark;
+}
+
+.links {
+  max-width: 485px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.link {
+  font-family: 'Gilroy-ExtraBold', sans-serif;
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  color: $color-dark;
+
+  &:hover::after {
+    content: '';
+    display: inline-block;
+    height: 4px;
+    width: 100%;
+    background-color: $brown-color;
+  }
+}
+
+.tel {
+  display: inline-block;
+  margin-right: 120px;
+}
+
+.rightImg {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  height: 70px;
+  width: 70px;
+}
