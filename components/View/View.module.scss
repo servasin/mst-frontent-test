@@ -1,0 +1,46 @@
+@import "../../styles/utils.scss";
+
+.view {
+  display: flex;
+  background-color: $light-grey;
+}
+
+.block,
+.image {
+  width: 50%;
+}
+
+.block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  max-width: 435px;
+}
+
+.title {
+  font-family: 'Gilroy-ExtraBold', sans-serif;
+  font-weight: 800;
+  font-size: 44px;
+  line-height: 54px;
+  letter-spacing: -0.0255199px;
+  text-transform: uppercase;
+  color: $color-dark;
+  margin: 0 0 40px;
+}
+
+.text {
+  font-family: Roboto;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: -0.0220791px;
+  color: $color-dark;
+  margin: 0;
+}
+
+.image {
+  object-fit: cover;
+}

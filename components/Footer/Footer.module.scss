@@ -1,0 +1,19 @@
+@import "../../styles/utils.scss";
+
+.footer {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  padding: 0 60px;
+}
+
+.copyright {
+  font-family: 'Gilroy-Light', sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 0.175729px;
+  text-transform: uppercase;
+  color: $color-gray;
+  margin: 0;
+}
