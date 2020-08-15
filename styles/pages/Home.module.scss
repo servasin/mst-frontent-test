@@ -1,4 +1,59 @@
+@import "../../styles/utils.scss";
+
 .page {
   padding: 0 60px;
   display: flex;
+}
+// Sidebar
+.sidebar {
+  min-height: calc(100vh - 120px);
+  display: flex;
+  align-items: center;
+  width: 283px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.link {
+  position: relative;
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: 0.567739px;
+  color: $color-gray;
+  margin-bottom: 31px;
+  transition: all 100ms;
+  cursor: pointer;
+  
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &:hover {
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.567739px;
+    text-transform: uppercase;
+    color: $color-dark;
+  }
+
+  &:hover::after {
+    content: '';
+    display: inline-block;
+    height: 9px;
+    width: 110%;
+    background-color: $light-brown;
+    position: absolute;
+    bottom: -3px;
+    left: -5%;
+    z-index: -1;
+  }
 }
